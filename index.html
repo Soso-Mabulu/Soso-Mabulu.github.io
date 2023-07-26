@@ -38,27 +38,46 @@
 	<!-- Navigation -->
 	<nav class="site-navigation">
 		<div class="site-navigation-inner site-container">
-			<img class="site-image" src="./images/site-logo.png" alt="site logo">
-			<div class="main-navigation">
-				<ul class="main-navigation__ul">
-					<li><a href="index.html">Home</a></li>					
-					<li><a href="#about-me-section">About Me</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#fh5co-social">Contact</a></li>
-				</ul>
-			</div>
-			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<script>
-				function myFunction(x) {
-					x.classList.toggle("change");
-				}
-			</script>
+		<img class="site-image" src="./images/site-logo.png" alt="site logo">
+		<div class="main-navigation">
+			<ul class="main-navigation__ul">
+			<li><a href="index.html" onclick="closeNav()">Home</a></li>					
+			<li><a href="#about-me-section" onclick="closeNav()">About Me</a></li>
+			<li><a href="#projects" onclick="closeNav()">Projects</a></li>
+			<li><a href="#follow-section" onclick="closeNav()">Follow Me</a></li>
+			<li><a href="#contact-form" onclick="closeNav()">Contact</a></li>
+			</ul>
+		</div>
+		<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<script>
+			function myFunction(x) {
+			x.classList.toggle("change");
+			var mainNav = document.querySelector('.main-navigation');
+			if (x.classList.contains("change")) {
+				mainNav.style.display = "block";
+				document.body.classList.add('stop-scroll');
+			} else {
+				mainNav.style.display = "none";
+				document.body.classList.remove('stop-scroll');
+			}
+			}
+	
+			function closeNav() {
+			var x = document.getElementById("myBtn");
+			var mainNav = document.querySelector('.main-navigation');
+			x.classList.remove("change");
+			mainNav.style.display = "none";
+			document.body.classList.remove('stop-scroll');
+			}
+		</script>
 		</div>
 	</nav>
+	  
+	
 	<!-- Navigation end -->
 
 	<!-- Top banner -->
@@ -321,7 +340,7 @@
 	
 
 	<!-- Social -->
-	<section class="fh5co-social">
+	<section class="fh5co-social" id="follow-section">
 		<div class="site-container">
 			<div class="social">
 				<h5>Follow me!!</h5>
@@ -339,7 +358,7 @@
 	<!-- Social -->
 
 	<!-- Footer -->
-	<footer class="site-footer">
+	<footer class="site-footer" id="contact-form">
 		<div class="site-container">
 			<div class="footer-inner">
 				<div class="footer-info">
