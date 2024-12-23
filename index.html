@@ -84,7 +84,7 @@
 	<section class="fh5co-top-banner">
 		<div class="top-banner__inner site-container">
 			<div class="top-banner__image">
-				<img src="./images/top-banner-author.jpg" alt="author image">
+				<img src="./images/top-banner-author.png" width="538px" height="713px" alt="author image">
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
@@ -107,21 +107,21 @@
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
 				<div class="portfolio__img">
-					<img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture">
+					<!-- <img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture"> -->
 				</div>
 				<div class="portfolio__bottom">
 					<div class="portfolio__name">
 						<span>S</span>
 						<h2 class="universal-h2">olulele Mabulu</h2>
 					</div>
-					<p>I am a passionate web developer and IT enthusiast. Currently, I'm pursuing my studies in Information Technology at North West University. I love working on web projects and learning about new technologies that empower the digital world.</p>
+					<p>I am a passionate web developer and IT enthusiast. I recently completed my BSc in Information Technology at North West University. I love working on web projects and learning about new technologies that empower the digital world.</p>
 				</div>
 			</article>
 			<div class="about-me__text">
 				<div class="about-me-slider">
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">My Journey</h2>
-						<p>As a final-year IT student at NWU, I've gained hands-on experience by building a website for Casita Express and working on various personal projects, including websites and apps. Currently serving as the CTO of Tell-A-Neva Holdings, I've been actively involved in steering technological initiatives within the company. My endeavors reflect a blend of academic knowledge and practical skills in the field of web development.</p>
+						<p>Having completed my BSc in Information Technology at NWU, I've gained hands-on experience by building a website for Casita Express and working on various personal projects, including websites and apps. Currently serving as the CTO of Tell-A-Neva Holdings, I've been actively involved in steering technological initiatives within the company. My endeavors reflect a blend of academic knowledge and practical skills in the field of web development.</p>
 						<h4>Web Development</h4>
 						<p class="p-white">My Projects</p>
 					</div>
@@ -136,142 +136,147 @@
 		</div>
 		<div class="about-me-bckg"></div>
 	</section>
-	<!-- About me end -->
-
+<!-- About me end -->
 
 	<!-- Projects -->
-	<section id="projects" class="bg-light">
-		<div class="container">
-		<h2 class="text-center mb-5">Projects I've Worked On</h2>
-		<div class="row">
-			<!-- Practise Projects -->
-			<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="images/practise-projects.jpg" alt="Practise Projects">
-				<div class="card-body text-center">
-				<h5 class="card-title">Practise Projects</h5>
-				<p class="card-text">Explore the projects I did during my IT studies.</p><br>
-				<a href="#" class="btn btn-primary learn-more" data-toggle="modal" data-target="#practiseProjectsModal">View More</a>
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-button active" data-category="all">All Projects</button>
+                <button class="filter-button" data-category="web">Web Development</button>
+                <button class="filter-button" data-category="mobile">Mobile Apps</button>
+                <button class="filter-button" data-category="desktop">Desktop Apps</button>
+            </div>
+
+            <div class="project-carousel-container">
+                <div class="project-carousel">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image" style="background-image: url('/api/placeholder/400/200')"></div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3 class="project-title">Casita Express</h3>
+                            <p class="project-description">A modern restaurant website with online ordering capabilities and real-time menu updates.</p>
+                            <div class="project-links">
+                                <a href="https://casitaexpress.com/" class="project-link">View Live</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image" style="background-image: url('/api/placeholder/400/200')"></div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3 class="project-title">Share2Teach</h3>
+                            <p class="project-description">Educational platform connecting teachers and students for seamless knowledge sharing.</p>
+                            <div class="project-links">
+                                <a href="https://tutoring-sosounplugged.netlify.app/" class="project-link">View Live</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image" style="background-image: url('/api/placeholder/400/200')"></div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3 class="project-title">Tell-A-Neva Holdings</h3>
+                            <p class="project-description">Corporate website showcasing services and portfolio with modern design.</p>
+                            <div class="project-links">
+                                <a href="https://tell-a-neva.netlify.app/" class="project-link">View Live</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="desktop">
+                        <div class="project-image" style="background-image: url('/api/placeholder/400/200')"></div>
+                        <div class="project-content">
+                            <div class="project-category">Desktop Application</div>
+                            <h3 class="project-title">CMPG315-ChatApp</h3>
+                            <p class="project-description">Windows Forms .NET chat application with real-time messaging capabilities.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image" style="background-image: url('/api/placeholder/400/200')"></div>
+                        <div class="project-content">
+                            <div class="project-category">Mobile App</div>
+                            <h3 class="project-title">VaultXpence</h3>
+                            <p class="project-description">Mobile finance management application for tracking expenses and budgeting.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-control prev-btn">←</button>
+                <button class="carousel-control next-btn">→</button>
+            </div>
+        </div>
+    </section>
+
+	<!-- Projects end -->
+
+	<!-- Resume -->
+	<section class="resume-section">
+		<div class="resume-container">
+			<div class="resume-grid">
+				<div class="resume-block">
+					<h3 class="resume-block-title">Education</h3>
+					<div class="education-item">
+						<div class="institution">North-West University, Potchefstroom</div>
+						<div class="degree">Bachelor of Science in Information Technology</div>
+						<div class="graduation-date">Expected Graduation: 2024</div>
+					</div>
+				</div>
+	
+				<div class="resume-block">
+					<h3 class="resume-block-title">Experience</h3>
+					<div class="experience-item">
+						<div class="experience-title">APJ Automation - Intern</div>
+						<p class="responsibilities">Assisted in web development projects, coding, and programming tasks.</p>
+					</div>
+					<div class="experience-item">
+						<div class="experience-title">North-West University - Student Assistant</div>
+						<p class="responsibilities">Helped in administrative tasks, assisted in student queries, and supported professors in various duties.</p>
+					</div>
+				</div>
+	
+				<div class="resume-block">
+					<h3 class="resume-block-title">Skills</h3>
+					<div class="skills-list">
+						<span class="skill-item">HTML</span>
+						<span class="skill-item">CSS</span>
+						<span class="skill-item">Java</span>
+						<span class="skill-item">Web Design</span>
+						<span class="skill-item">Communication</span>
+						<span class="skill-item">Delegation</span>
+					</div>
 				</div>
 			</div>
-			</div>
-			<!-- Mobile Applications -->
-			<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="images/mobile-apps.jpg" alt="Mobile Applications">
-				<div class="card-body text-center">
-				<h5 class="card-title">Mobile Applications</h5>
-				<p class="card-text">Discover the mobile applications I've built for various platforms.</p><br>
-				<a href="#" class="btn btn-primary learn-more" data-toggle="modal" data-target="#mobileAppsModal">Learn More</a>
-				</div>
-			</div>
-			</div>
-			<!-- Websites -->
-			<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="images/websites.jpg" alt="Websites">
-				<div class="card-body text-center">
-				<h5 class="card-title">Websites</h5>
-				<p class="card-text">Check out the websites I've built with passion and creativity.</p><br>
-				<a href="#" class="btn btn-primary learn-more" data-toggle="modal" data-target="#websitesModal">Learn More</a>
-				</div>
-			</div>
+	
+			<div class="download-container">
+				<a href="./cv/SoluleleMabulu-CV.pdf" class="download-cv">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+					</svg>
+					Download CV
+				</a>
 			</div>
 		</div>
-		</div>
-		<!-- <div class="text-center mt-4">
-		<a href="services.php" class="text-decoration-none">View More <i class="fa fa-chevron-right"></i></a>
-		</div> -->
 	</section>
-	
-	<!-- Modals -->
-	<div class="modal fade" id="practiseProjectsModal" tabindex="-1" role="dialog" aria-labelledby="practiseProjectsModalLabel"
-	aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="practiseProjectsModalLabel">Practise Projects</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<p>During my IT studies, I had the opportunity to work on various practice projects to enhance my skills and
-							understanding of different technologies and programming languages. These projects were designed to simulate
-							real-world scenarios and challenges that developers often encounter in their professional careers.</p>
-						<p>One such project involved building a web application for a fictional e-commerce store. I implemented features
-							like user authentication, product catalog, shopping cart, and order processing. It was a valuable experience
-							that allowed me to apply theoretical knowledge to practical use and improve my problem-solving skills.</p>
-						<p>I have also worked on projects that involved building mobile applications for specific use cases, such as a
-							task manager, weather app, and note-taking app. These projects helped me gain hands-on experience in mobile app
-							development and taught me how to design user-friendly interfaces.</p>
-						<!-- Add your actual project images here -->
-						<img src="images/UserDashBoard.png" width="30%" height="30%" alt="Project 1">
-						<img src="images/Adding New Event.png" width="30%" height="30%" alt="Project 2">
-						<img src="images/Login.png" width="30%" height="30%" alt="Project 3">
-					</div>
-					<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="mobileAppsModal" tabindex="-1" role="dialog" aria-labelledby="mobileAppsModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="mobileAppsModalLabel">Mobile Applications</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-			<div class="modal-body">
-			<p>Mobile applications have always fascinated me as they provide a great platform to reach a vast audience. I've
-				developed various mobile apps for different platforms, including Android and iOS. Each app has been crafted
-				with attention to detail, usability, and aesthetics.</p>
-			<p>Some of my notable mobile apps include:</p>
-			<ul>
-				<li><a href="https://play.google.com/mobile_app_1" target="_blank">Mobile App 1</a></li>
-				<li><a href="https://apps.apple.com/mobile_app_2" target="_blank">Mobile App 2</a></li>
-				<li><a href="https://play.google.com/mobile_app_3" target="_blank">Mobile App 3</a></li>
-			</ul>
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-		</div>
-	</div>
-	
-	<div class="modal fade" id="websitesModal" tabindex="-1" role="dialog" aria-labelledby="websitesModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="websitesModalLabel">Websites</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-			<div class="modal-body">
-			<p>Building websites is my passion. I believe in creating user-friendly and visually appealing web experiences
-				that leave a lasting impression. Here are some of the websites I've built:</p>
-			<ul>
-				<li><a href="https://tutoring-sosounplugged.netlify.app/" target="_blank">Soso Unplugged|tutoring</a></li>
-				<li><a href="https://casitaexpress.com/" target="_blank">Casita Express Resturant</a></li>
-				<li><a href="https://tell-a-neva.netlify.app/" target="_blank">Tell A Neva Holdings</a></li>
-			</ul>
-			<p>Feel free to explore these websites and see the results of my dedication and expertise in web development.
-			</p>
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-		</div>
-	</div>
-  
+	<!-- Resume end -->  
 
 	<!-- Counter -->
 	<div class="fh5co-counter counters">
@@ -307,6 +312,7 @@
 		</div>
 	</div>
 	<!-- Counter end -->
+
 	<!-- Quotes -->
 	<section class="fh5co-quotes">
 		<div class="site-container">
@@ -413,6 +419,79 @@
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            let currentPosition = 0;
+            const cardWidth = $('.project-card').outerWidth(true);
+            
+            // Filter functionality
+            $('.filter-button').click(function() {
+                const category = $(this).data('category');
+                
+                // Update active button
+                $('.filter-button').removeClass('active');
+                $(this).addClass('active');
+                
+                // Reset carousel position
+                currentPosition = 0;
+                $('.project-carousel').css('transform', `translateX(0)`);
+                
+                // Filter projects
+                if (category === 'all') {
+                    $('.project-card').removeClass('hidden fade-out');
+                } else {
+                    $('.project-card').each(function() {
+                        if ($(this).data('category') === category) {
+                            $(this).removeClass('hidden fade-out');
+                        } else {
+                            $(this).addClass('fade-out');
+                            setTimeout(() => {
+                                $(this).addClass('hidden');
+                            }, 300);
+                        }
+                    });
+                }
+            });
+            
+            // Carousel navigation
+			$('.next-btn').click(function() {
+				const visibleCards = $('.project-card:not(.hidden)');
+				let visibleCardCount;
+				
+				// Determine number of visible cards based on screen width
+				if (window.innerWidth > 1200) {
+					visibleCardCount = 4;
+				} else if (window.innerWidth > 992) {
+					visibleCardCount = 3;
+				} else if (window.innerWidth > 768) {
+					visibleCardCount = 2;
+				} else {
+					visibleCardCount = 1;
+				}
+				
+				const maxPosition = -(cardWidth * (visibleCards.length - visibleCardCount));
+				
+				if (currentPosition > maxPosition) {
+					currentPosition -= cardWidth;
+					$('.project-carousel').css('transform', `translateX(${currentPosition}px)`);
+				}
+			});
+
+			// Add window resize handler to adjust carousel position when screen size changes
+			$(window).resize(function() {
+				currentPosition = 0;
+				$('.project-carousel').css('transform', `translateX(0)`);
+			});
+            
+            $('.prev-btn').click(function() {
+                if (currentPosition < 0) {
+                    currentPosition += cardWidth;
+                    $('.project-carousel').css('transform', `translateX(${currentPosition}px)`);
+                }
+            });
+        });
+    </script>
   
 </body>
 </html>
